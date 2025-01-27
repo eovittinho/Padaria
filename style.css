@@ -1,16 +1,16 @@
 
 .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 450px; /* Altura da navbar, você pode ajustar conforme necessário */
-    width: 100%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px; /* Altura da navbar, você pode ajustar conforme necessário */
+  width: 100%;
+}
 
-  .logo-container img {
-    height: 100%; /* Faz a imagem ocupar toda a altura da navbar */
-    width: auto; /* Mantém a proporção da imagem */
-  }
+.logo-container img {
+  height: 100%; /* Faz a imagem ocupar toda a altura da navbar */
+  width: auto; /* Mantém a proporção da imagem */
+}
 
 body {
     background-color: #f8f9fa;
@@ -19,17 +19,17 @@ body {
 header {
 
 background-color: #533629;
-
+color: white;
 }
 
 h2 {
     margin-bottom: 20px;
 }
 
-.navbar {
-    background-color: #533629; /* Cor de fundo para a navbar */
+.custom-navbar {
+  background-color: #533629; /* cor personalizada (vermelho) */
+}
 
-  }
 
   .navbar-nav .nav-link {
     color: white !important; /* Aplica a cor branca ao texto */
@@ -49,11 +49,12 @@ footer {
     background-color: #533629;
     color: white;
 }
+.custom-main {
+  background-color: #533629; /* Cor de fundo */
+  padding: 20px 0; /* Ajuste o espaçamento conforme necessário */
+}
 
-main {
-
-background-color: #533629;
-color: white;
-
+.custom-main .container {
+  color: white; /* Define a cor do texto dentro do container */
 }
 
