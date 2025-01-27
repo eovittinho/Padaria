@@ -17,22 +17,25 @@ body {
 }
 
 header {
-
-background-color: #533629;
-color: white;
+  background-color: #FFDEAD;
+  color: white;
+  font-size: 22px; /* Tamanho da fonte */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  padding: 20px; /* Adiciona um pouco de espaçamento dentro do header */
 }
+
 
 h2 {
     margin-bottom: 20px;
 }
 
 .custom-navbar {
-  background-color: #533629; /* cor personalizada (vermelho) */
+  background-color: 	#FFDEAD; /* cor personalizada (vermelho) */
 }
 
 
   .navbar-nav .nav-link {
-    color: white !important; /* Aplica a cor branca ao texto */
+    color: black !important; /* Aplica a cor branca ao texto */
   }
 
 .card {
@@ -46,11 +49,11 @@ h2 {
 }
 footer {
     text-align: center;
-    background-color: #533629;
+    background-color: 	#FFDEAD;
     color: white;
 }
 .custom-main {
-  background-color: #533629; /* Cor de fundo */
+  background-color:	#FFDEAD; /* Cor de fundo */
   padding: 20px 0; /* Ajuste o espaçamento conforme necessário */
 }
 
