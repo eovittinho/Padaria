@@ -1,63 +1,45 @@
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 450px; /* Altura da navbar, você pode ajustar conforme necessário */
-  width: 100%;
+.navbar-custom {
+  background-color: #5a2d2f; /* Cor semelhante à do site */
 }
-
-.logo-container img {
-  height: 100%; /* Faz a imagem ocupar toda a altura da navbar */
-  width: auto; /* Mantém a proporção da imagem */
-}
-
-body {
-    background-color: #f8f9fa;
-}
-
-header {
-  background-color: #FFDEAD;
+.navbar-brand {
+  font-family: 'Cursive', sans-serif;
   color: white;
-  font-size: 22px; /* Tamanho da fonte */
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-  padding: 20px; /* Adiciona um pouco de espaçamento dentro do header */
+  font-size: 24px;
+}
+.nav-link {
+  color: white !important;
+}
+.search-bar {
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.btn-custom {
+  background-color: #ffb347; /* Cor dos botões de login/carrinho */
+  color: black;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 20px; /* Ajuste o valor conforme necessário */
+}
+
+.titulo-cat {
+  font-size: 25px; /* Ajuste o valor conforme necessário */
 }
 
 
-h2 {
-    margin-bottom: 20px;
-}
-
-.custom-navbar {
-  background-color: 	#FFDEAD; /* cor personalizada (vermelho) */
-}
-
-
-  .navbar-nav .nav-link {
-    color: black !important; /* Aplica a cor branca ao texto */
-  }
-
-.card {
-    transition: transform 0.2s;
-    background-color: #e8e3e2;
-    
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
 footer {
-    text-align: center;
-    background-color: 	#FFDEAD;
-    color: white;
-}
-.custom-main {
-  background-color:	#FFDEAD; /* Cor de fundo */
-  padding: 20px 0; /* Ajuste o espaçamento conforme necessário */
+text-align: center;
+color: white;
+background-color: #5a2d2f;
 }
 
-.custom-main .container {
-  color: white; /* Define a cor do texto dentro do container */
+.card-img-top {
+  transition: transform 0.3s ease-in-out;
 }
 
+.card-img-top:hover {
+  transform: scale(1.1);
+}
