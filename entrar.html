@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Padaria Delicio Pão</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/Vintage Retro Cake and Bakery Badge Logo.png" alt="Logo" class="d-inline-block align-top" style="max-height: 500px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Promo de Verão ☀️</a></li>
+                    <li class="nav-item"><a class="nav-link" href="SS.html">Sanduiches/Salgados 🥪</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Sobremesas.html">Sobremesas 🧁</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Padaria 🍞
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="PT.html">Pães Tradicionais</a></li>
+                          <li><a class="dropdown-item" href="PE.html">Pães Especiais</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="roscas.html">Roscas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <li class="btn btn-custom btn-sm" class="nav-item"><a class="nav-link" href="entrar.html">Entrar</a></li>
+            </div>
+        </div>
+    </nav>    
+</header>
+    <div class="container">
+        <!-- Nav Tabs -->
+        <ul class="nav nav-tabs" id="authTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="login-tab" data-bs-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Entrar</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="signup-tab" data-bs-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="false">Criar Conta</a>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="authTabsContent">
+            <!-- Login Form -->
+            <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                <h3>Entrar</h3>
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="loginEmail" placeholder="Seu email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="loginPassword" placeholder="Sua senha">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                </form>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                <h3>Criar Conta</h3>
+                <form id="signupForm">
+                    <div class="mb-3">
+                        <label for="signupName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="signupName" placeholder="Seu nome completo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="signupEmail" placeholder="Seu email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupPassword" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="signupPassword" placeholder="Sua senha">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Criar Conta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // JavaScript para validação simples de formulário
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Impede o envio do formulário
+
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            if (!email || !password) {
+                alert('Por favor, preencha todos os campos.');
+            } else {
+                alert('Login realizado com sucesso!');
+                // Aqui você pode adicionar lógica para enviar os dados para o servidor
+            }
+        });
+
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Impede o envio do formulário
+
+            const name = document.getElementById('signupName').value;
+            const email = document.getElementById('signupEmail').value;
+            const password = document.getElementById('signupPassword').value;
+
+            if (!name || !email || !password) {
+                alert('Por favor, preencha todos os campos.');
+            } else {
+                alert('Conta criada com sucesso!');
+                // Aqui você pode adicionar lógica para enviar os dados para o servidor
+            }
+        });
+    </script>
+</body>
+</html>

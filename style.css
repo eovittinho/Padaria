@@ -43,3 +43,14 @@ background-color: #5a2d2f;
 .card-img-top:hover {
   transform: scale(1.1);
 }
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
